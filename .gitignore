@@ -1,0 +1,21 @@
+# 環境變數檔案
+.env
+.env.*  # 支援 .env.production、.env.local 等
+
+# Node.js modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 作業系統產生的垃圾檔
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# IDE 相關
+.vscode/
+.idea/
+
+json/2112.json

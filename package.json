@@ -1,0 +1,25 @@
+{
+  "name": "randomsharkbot",
+  "version": "11.0.0",
+  "engines": {
+    "node": "^18.15.0",
+    "npm": "^9.5.0",
+    "yarn": "^1.22.19"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max-old-space-size=750 index "
+  },
+  "author": "E_Phrygian",
+  "license": "CC BY-NC",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "cron": "^2.3.0",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^2.0.0",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.5.0"
+  }
+}
