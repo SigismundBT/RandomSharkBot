@@ -1,10 +1,12 @@
 # 🦈 RandomSharkBot
 
+&#x20;  &#x20;
+
 > 🚨 This is the final and latest version of RandomSharkBot. The project is no longer actively maintained, but remains available for reference and inspiration.
 
 > ⚙️ This version is based on [RandomSharkBot V12](https://github.com/SigismundBT/RandomSharkBot-V12) with significant feature upgrades, improved structure, and updated libraries.
 
-> A fully featured Discord bot originally developed for a ~100-member gaming server, hosted on Heroku. Designed to automate birthday reminders, user onboarding, role management, and more — all backed by Firebase.
+> A fully featured Discord bot originally developed for a \~100-member gaming server, where the developer also served as a co-admin. The bot initially featured full role and user onboarding automation in its v12 version. The birthday reminder system was later added based on a feature request by the server owner. The bot was hosted on Heroku and backed by Firebase.. Designed to automate birthday reminders, user onboarding, role management, and more — all backed by Firebase.
 
 ---
 
@@ -67,14 +69,18 @@
 
 - A web-based Birthday Setting Page (accessible via `!-生日登記網址`) was implemented using **React**, with form validation and communication with the backend via Express and Firebase.
 - This is a single-page React application that uses client-side routing to display different views under the same domain.
-- The page allows users to set or update their birthday with a user-friendly interface.
+- The bot generates the birthday page URL dynamically with the format: `http://<domain>/bd/:GuildID/:userID`, allowing the page to auto-fill the necessary context for birthday submission.
+- Originally, there were plans to enhance this page with Discord OAuth2 login to improve security. However, this was not implemented before development ceased.
+- The page was temporarily taken offline due to concerns about data security. However, the bot itself became inactive primarily because Heroku discontinued its free tier. While it was briefly hosted on Google Cloud, the free quota was used up and maintenance was stopped due to potential costs and the eventual shutdown of the original Discord server.
 - Although the current version of the bot does not include the page directly, the birthday setting webpage continues to function independently.
 - 🔗 [Birthday Setting Page (React Repo)](https://github.com/SigismundBT/RandomSharkBot-V14-React-Page)
+
 ---
 
 ## 📂 Database
 
 - **Firebase Realtime Database** stores:
+
   - Member birthday records
   - Role/channel settings for auto commands
   - Reaction Role configurations
@@ -117,6 +123,7 @@ FIREBASE_KEY_PATH=./json/2112.json
 ---
 
 ### discord.js v14
+
 - Current version
 - Slash command support
 - Codebase cleanup and structure improvements
@@ -134,7 +141,26 @@ Originally hosted on **Heroku**, but can be easily deployed to:
 
 ---
 
+## 🧭 Version History
+
+### V12 (Legacy)
+- Featured Reaction Role system (with support for standard and custom emojis)
+- Included many features, but with a redundant and static structure
+- Configuration was hardcoded or edited via fixed data files
+- Used AWS DynamoDB for data storage
+- Designed for a single Discord server (no dynamic multi-server support)
+
+### V14 (Current & Final Version)
+- Designed with the potential for future commercial-scale bots in mind
+- Major technical overhaul with full multi-server support
+- Simplified and streamlined structure based on lessons from V12
+- All configuration done via in-Discord commands (message or slash commands)
+- Added Welcome/Leave messages, auto role assignment, and birthday reminder system
+- Migrated from DynamoDB to Firebase Realtime Database
+- Introduced cron-based birthday notifications
+- Added React-based birthday setting webpage
+
 ## 🤓 Author
 
-Developed by [@SigismundBT](https://github.com/SigismundBT) (AKA E_Phrygian) — Full-stack hobbyist with a passion for automation, music, and clean code.
+Developed by [@SigismundBT](https://github.com/SigismundBT) (AKA E\_Phrygian) — Full-stack hobbyist with a passion for automation, music, and clean code.
 
