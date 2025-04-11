@@ -64,7 +64,8 @@
 ## 🧰 React Feature
 
 - A web-based Birthday Setting Page (accessible via `!-生日登記網址`) was implemented using **React**, with form validation and communication with the backend via Express and Firebase.
-- This page allows users to set or update their birthday with a user-friendly interface.
+- This is a single-page React application that uses client-side routing to display different views under the same domain.
+- The page allows users to set or update their birthday with a user-friendly interface.
 - Although the current version of the bot does not include the page directly, the birthday setting webpage continues to function independently.
 - 🔗 [Birthday Setting Page (React Repo)](https://github.com/SigismundBT/RandomSharkBot-V14-React-Page)
 ---
@@ -95,7 +96,7 @@
 
 ## 🧰 Tech Stack
 
-- Node.js (includes an Express.js backend server used for uptime pings and previously for the birthday setting page)
+- Node.js (includes a single Express.js backend server that handles both uptime pings and routing for the birthday setting page)
 - discord.js
 - Firebase
 - dotenv
@@ -107,8 +108,8 @@
 
 ```env
 DISCORD_BOT_TOKEN=your_token_here
+DISCORD_CLIENT_ID=your_client_id_here
 FIREBASE_KEY_PATH=./json/2112.json
-BIRTHDAY_WEBPAGE_URL=https://your-webpage.example.com
 ```
 
 ---
