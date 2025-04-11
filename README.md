@@ -1,5 +1,7 @@
 # 🦈 RandomSharkBot
 
+> 🚨 This is the final and latest version of RandomSharkBot. The project is no longer actively maintained, but remains available for reference and inspiration.
+
 > ⚙️ This version is based on [RandomSharkBot V12](https://github.com/SigismundBT/RandomSharkBot-V12) with significant feature upgrades, improved structure, and updated libraries.
 
 > A fully featured Discord bot originally developed for a ~100-member gaming server, hosted on Heroku. Designed to automate birthday reminders, user onboarding, role management, and more — all backed by Firebase.
